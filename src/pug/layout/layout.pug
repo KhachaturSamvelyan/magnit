@@ -1,0 +1,30 @@
+doctype html
+
+block variables
+
+block links
+
+block scripts
+
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title #{title}
+		link(rel='stylesheet', type='text/css', href="css/pages/" + link)
+		link(rel="icon" href="img/logo.png" sizes="32x32")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+		link(rel="preconnect" href="https://fonts.gstatic.com")
+		link(rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css")
+		link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet")
+		link(rel='stylesheet', href='https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css')
+		link(rel='stylesheet', href='https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css')
+		script(src='https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js')
+		link(href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet")
+	body
+		block header
+		block content
+		block footer
+		script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+		script(type="text/javascript" src="js/" + js)

@@ -1,0 +1,248 @@
+extends ../layout/layout.pug
+
+block variables
+	- var title = 'Main';
+
+block links
+	- var link = 'main.css';
+
+block scripts
+	- var js = 'index.js';
+
+block header
+	include ../blocks/header.pug
+block content
+	.page_wrap
+		.big_Container.main
+			.main_top
+				.main_cont
+					.main_cont_img
+						img(src="img/MaskGroup.png")
+					.main_cont_right
+						.main_cont_right_top
+							.main_cont_right_top_title
+								h1 Последний звонок 2021
+								p.title Сделайте этот день особенным с
+									img(src="img/Ferrero_logo.svg")
+									|и
+									img(src="img/raffaello-logo.svg")
+							.main_cont_right_slide
+								button.arrow_prev
+									include ../../img/Vector14.svg
+								.swiper-container.swiper-container1
+									.swiper-wrapper
+										.swiper-slide
+											.video_block_box
+												img.vid_img_hide(src='img/MaskGroup(1).png')
+												button.play_vid
+													img(src='img/Group100.svg')
+												video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+										.swiper-slide
+											.video_block_box
+												img.vid_img_hide(src='img/MaskGroup(1).png')
+												button.play_vid
+													img(src='img/Group100.svg')
+												video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+								button.arrow_next
+									include ../../img/Vector13.svg
+						.main_cont_right_etaps
+							.main_cont_right_etaps_item
+								.number
+									p 1
+								h4 Покупайте Raffaello / Ferrero Rocher
+									p на сумму
+									|от 99 рублей
+									p в сети
+									|«Магнит»
+									p в одном чеке
+							.main_cont_right_etaps_item
+								.number
+									p 2
+								h4 Регистрируйте чек
+									p на сайте
+									|коллекция-ферреро.рф
+							.main_cont_right_etaps_item
+								.number
+									p 3
+								h4 Выигрывайте
+									p особенные призы
+						a Участвовать
+			.main_bottom
+				.main_bottom_cont
+					h2 Акция проходит с 6 мая 2021 по 10 июня 2021
+		.big_Container.emotions
+			.emotions_top
+				.emotions_top_cont
+					.emotions_top_cont_title
+						h2 Подарите близким яркие эмоции
+						p Вы сами выбираете, чем запомнится этот день!
+					.emotions_top_cont_flex
+						.emotions_top_cont_flex_item
+							.emotions_top_cont_flex_item_top
+								img(src="img/cascasc.png")
+								h4 Гарантированный приз
+								p 50 рублей на телефон* при покупке конфет на сумму от 99 рублей
+							.emotions_top_cont_flex_item_bottom
+								p *Количество призов ограничено
+						.emotions_top_cont_flex_item
+							.emotions_top_cont_flex_item_top
+								img(src="img/Grou11.png")
+								h4 Еженедельный розыгрыш
+								p Крутой смартфон или уикенд с любимыми на выбор для 5 победителей
+			.emotions_bottom
+		.big_Container.joinus
+			.joinus_top
+				.joinus_top_cont
+					h2 Присоединяйтесь!
+					.joinus_top_cont_flex
+						.joinus_top_cont_flex_item
+							img(src="img/Group1170.png")
+							h4 Покупайте
+							p Raffaello / Ferrero Rocher на сумму от 99 рублей в сети «Магнит» в одном чеке
+						.joinus_top_cont_flex_item
+							img(src="img/Group1171.png")
+							h4 Регистрируйте чек
+							p на сайте
+								br
+								|коллекция-ферреро.рф
+						.joinus_top_cont_flex_item
+							img(src="img/Group1172.png")
+							h4 Получайте каждый день
+							p гарантированные 50 рублей на телефон*
+						.joinus_top_cont_flex_item
+							img(src="img/Group1173.png")
+							h4 Участвуйте
+							p в розыгрыше главных призов каждую неделю*
+					.joinus_top_cont_btn
+						button Загрузить чек
+						p *Количество призов ограничено
+			.joinus_bottom
+		.big_Container.lastcall
+			.lastcall_cont
+				.lastcall_cont_title
+					h2 Подготовьтесь к последнему звонку заранее
+					p Дмитрий Маликов поделился советами, как найти вдохновение и сделать этот день по-настоящему особенным! 
+				.lastcall_cont_slide
+					button.arrow_prev2
+						include ../../img/Vector14.svg
+					.swiper-container.swiper-container2
+						.swiper-wrapper
+							.swiper-slide
+								.video_block_box
+									img.vid_img_hide(src='img/MaskGroup(1).png')
+									button.play_vid
+										img(src='img/Group100.svg')
+									video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+							.swiper-slide
+								.video_block_box
+									img.vid_img_hide(src='img/MaskGroup(1).png')
+									button.play_vid
+										img(src='img/Group100.svg')
+									video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+					button.arrow_next2
+						include ../../img/Vector13.svg
+		.big_Container.faq
+			.faq_cont
+				h2 Остались вопросы?
+				.faq_cont_cuestion
+					.faq_cont_cuestion_item
+						.faq_cont_cuestion_item_title
+							.faq_cont_cuestion_item_title_left
+								h4 Кто является организатором акции?
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							button
+								include ../../img/Vectcasacs.svg
+						.faq_cont_cuestion_item_hide
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							ul
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							a Lorem ipsum
+					.faq_cont_cuestion_item
+						.faq_cont_cuestion_item_title
+							.faq_cont_cuestion_item_title_left
+								h4 Какие сроки проведения акции?
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							button
+								include ../../img/Vectcasacs.svg
+						.faq_cont_cuestion_item_hide
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							ul
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							a Lorem ipsum
+					.faq_cont_cuestion_item
+						.faq_cont_cuestion_item_title
+							.faq_cont_cuestion_item_title_left
+								h4 Где проводится акция?
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							button
+								include ../../img/Vectcasacs.svg
+						.faq_cont_cuestion_item_hide
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							ul
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							a Lorem ipsum
+					.faq_cont_cuestion_item
+						.faq_cont_cuestion_item_title
+							.faq_cont_cuestion_item_title_left
+								h4 Как участвовать?
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							button
+								include ../../img/Vectcasacs.svg
+						.faq_cont_cuestion_item_hide
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							ul
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit ...
+							a Lorem ipsum
+				.faq_cont_buttons
+					p Всё ещё есть вопросы?
+					button Свяжитесь с нами
+		.big_Container.winners
+			.winners_cont
+				h2 Победители
+				.winners_cont_table
+					.winners_cont_table_title
+						p #
+						p Дата
+						p Победитель
+						p Email
+						p Приз
+					.winners_cont_table_item
+						p 1
+						p 20.07.2020
+						p Сергей Сергеевич
+						p i**n@gmail.com
+						p Наименование приза
+					.winners_cont_table_item
+						p 2
+						p 20.07.2020
+						p Сергей Сергеевич
+						p i**n@gmail.com
+						p Наименование приза
+					.winners_cont_table_item
+						p 3
+						p 20.07.2020
+						p Сергей Сергеевич
+						p i**n@gmail.com
+						p Наименование приза
+					.winners_cont_table_item
+						p 4
+						p 20.07.2020
+						p Сергей Сергеевич
+						p i**n@gmail.com
+						p Наименование приза
+					.winners_cont_table_item
+						p 5
+						p 20.07.2020
+						p Сергей Сергеевич
+						p i**n@gmail.com
+						p Наименование приза
+block footer
+	include ../blocks/footer.pug

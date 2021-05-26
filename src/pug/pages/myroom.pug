@@ -1,0 +1,83 @@
+extends ../layout/layout.pug
+
+block variables
+  - var title = 'Main';
+
+block links
+  - var link = 'main.css';
+
+block scripts
+  - var js = 'index.js';
+
+block header
+  include ../blocks/header.pug
+block content
+  .page_wrap
+    .big_Container.myroom
+      .myroom_cont
+        h2 Личный кабинет
+        .myroom_cont_links
+          .myroom_cont_links_left
+            p Иванов Иван
+            p ivanov@work.ru
+          .myroom_cont_links_right
+            a Выйти
+        .myroom_cont_table
+          .myroom_cont_table_title
+            p #
+            p Дата
+            p Статус проверки
+            p Выбранный приз
+          .myroom_cont_table_item
+            p 1
+            p 20.07.2020
+            p Проверен
+            p Участие в розыгрыше
+          .myroom_cont_table_item
+            p 2
+            p 20.07.2020
+            p Проверен
+            p 50 рублей на телефон
+          .myroom_cont_table_item
+            p 3
+            p 20.07.2020
+            p Проверен
+            p
+          .myroom_cont_table_item
+            p 4
+            p 20.07.2020
+            p Проверен
+            p 
+          .myroom_cont_table_item
+            p 5
+            p 20.07.2020
+            p Проверен
+            p 
+          .myroom_cont_table_item
+            p 6
+            p 20.07.2020
+            p Проверен
+            p.priz_gray Выбрать приз
+          .myroom_cont_table_item
+            p 7
+            p 20.07.2020
+            p Проверен
+            p.priz_gray Выбрать приз
+          .myroom_cont_table_item
+            p 8
+            p 20.07.2020
+            p Проверен
+            p.prize_blue Выбрать приз
+          .myroom_cont_table_item
+            p 9
+            p 20.07.2020
+            p Проверен
+            p 
+          .myroom_cont_table_item
+            p 10
+            p 20.07.2020
+            p Проверен
+            p.prize_blue Выбрать приз
+        button Загрузить чек
+block footer
+  include ../blocks/footer.pug
